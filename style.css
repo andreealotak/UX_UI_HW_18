@@ -2,7 +2,6 @@
 .topNavSection {
     display: flex;
     height: 80px;
-    width: 2000px;
 }
 
 .logoImage {
@@ -428,4 +427,28 @@ footer {
 
 .dividerLine {
     color: #333333;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-areas: "myArea myArea myArea myArea";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.item1 {
+    grid-area: "myArea";
+}
+
+@media only screen and (max-width: 600px) {
+    .workGrid {
+        display: grid;
+        grid-template-areas: "myArea myArea myArea myArea";
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+    .item1 {
+        grid-area: "myArea";
+    }
 }
